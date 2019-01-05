@@ -19,11 +19,18 @@ public class BeginJava {
         
         Cliente objetoNum01Cliente = new Cliente();        
         
-        objetoNum01Cliente.nome = "Felipe";
-        objetoNum01Cliente.idade = 29;
+        objetoNum01Cliente.setNome("Felipe");
+        objetoNum01Cliente.setIdade(29);
+        //objetoNum01Cliente.sexo = "Masc.";
+        objetoNum01Cliente.setSexo("Masc.");
         
-        System.out.println("Nome do cliente " + objetoNum01Cliente.nome);
-        System.out.println("Idade do cliente " + objetoNum01Cliente.idade);
+        
+        // Vamos enviar o "tipo de sexo" pro metodo definir o real valor do 
+        // atributo sexo que está dentro da class
+        
+        System.out.println("Nome do cliente " + objetoNum01Cliente.getNome());
+        System.out.println("Idade do cliente " + objetoNum01Cliente.getIdade());
+        System.out.println("Sexo do cliente " + objetoNum01Cliente.getSexo());
         
         //Console.WriteLine()
         
